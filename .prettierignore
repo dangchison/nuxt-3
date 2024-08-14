@@ -1,0 +1,21 @@
+.idea
+.nuxt
+node_modules
+
+public
+assets
+
+.prettierrc.json
+.prettierignore
+.gitignore
+
+# config file
+nuxt.config.ts
+eslint.config.mjs
+tsconfig.json
+tailwind.config.js
+
+package.json
+pnpm-lock.yaml
+
+README.md

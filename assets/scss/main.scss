@@ -1,0 +1,11 @@
+@use "variable";
+@use 'font';
+@import "flag";
+
+body {
+  font-family: "Dosis", "Montserrat", "Quicksand", sans-serif, Roboto, Arial, "Times New Roman";
+  font-weight: 400;
+  font-optical-sizing: auto;
+  line-height: 1;
+  letter-spacing: 0;
+}

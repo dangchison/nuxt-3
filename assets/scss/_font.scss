@@ -1,0 +1,28 @@
+$dosisWeight: 400, 500, 700;
+$montserratWeight: 400, 500, 700;
+$quicksandWeight: 400, 600;
+
+@mixin renderFont($fontName, $fontWeight) {
+  @each $weight in $fontWeight {
+    &--#{$weight} {
+      font-family: $fontName, sans-serif;
+      font-optical-sizing: auto;
+      font-weight: $weight;
+      font-style: normal;
+    }
+  }
+}
+
+.font {
+  &-dosis {
+    @include renderFont('Dosis', $dosisWeight);
+  }
+
+  &-montserrat {
+    @include renderFont('Montserrat', $montserratWeight);
+  }
+
+  &-quicksand {
+    @include renderFont('Quicksand', $quicksandWeight);
+  }
+}
